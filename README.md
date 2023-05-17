@@ -38,7 +38,10 @@ npm install
 ```
 npm start   
 ```
-6.在线接口文档 https://docs.apipost.cn/preview/c1f3039454fb9e67/02235e4d4590d910?target_id=78d9eb39-d6f9-4ee5-b2fa-82ff6b15678e
+6.在线接口文档 https://docs.apipost.cn/preview/c1f3039454fb9e67/02235e4d4590d910?target_id=78d9eb39-d6f9-4ee5-b2fa-82ff6b15678e    
+
+7.端口修改/bin/www  3000改成其他  
+
 #### 接口状态
 > 已完成
 

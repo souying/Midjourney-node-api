@@ -25,8 +25,8 @@
 1.确保服务器已经有node环境18以上    
 2.拉取代码   
 ```
-git clone https://github.com/erictik/midjourney-api.git
-cd midjourney-api
+git clone https://github.com/souying/midjourney-node-api.git
+cd midjourney-node-api
 ```
 3.下载依赖  
 ```

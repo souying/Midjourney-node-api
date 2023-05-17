@@ -1,12 +1,40 @@
 # Midjourney-node-api
-Midjourney-api,nodejs,非官方api
 
+代理 MidJourney 的discord频道，实现api形式调用AI绘图  
 
+## 现有功能
+- [x] 支持 Imagine、U、V 指令，绘图完成后回调  
+- [x] 支持队列执行  
+- [x] 支持中文 prompt 翻译，需配置百度翻译
+- [x] 队列任务存储在本地小型数据库  
+
+## 后续计划
+- [ ] 定时清空所有任务  
+- [ ] 账号池子（暂定）
+- [ ] 看情况优化  
+
+## 使用前提
+1. 科学上网
+2. node环境 node 18版本以上
+3. 注册 MidJourney，创建自己的频道，参考 https://docs.midjourney.com/docs/quick-start
+
+## 快速启动
+1.确保服务器已经有node环境18以上    
+2.拉取代码   
 ```
-## /mj绘图相关api/提交绘画任务get
-```text
-暂无描述
+git clone https://github.com/erictik/midjourney-api.git
+cd midjourney-api
 ```
+3.下载依赖  
+```
+yarn
+# or npm
+npm install
+```
+4.项目跟目录下新建 .env 文件 参考.env.example  
+
+5.访问127.0.0.1：3000  启动成功  
+
 #### 接口状态
 > 已完成
 

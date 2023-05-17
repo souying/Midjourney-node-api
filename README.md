@@ -36,19 +36,8 @@ prompt | 一只狗 | - | 是 | 绘图参数: IMAGINE时必传
 taskId | 123456789 | - | 是 | 任务ID: UPSCALE、VARIATION时必传
 index | 1 | - | 是 | 图序号: 1～4，UPSCALE、VARIATION时必传，表示第几张图
 state | main | - | 是 | 自定义字符串: 非必传，供回调到业务系统里使用
-notifyHook | http://www.baidu.com | - | 是 | 支持每个任务配置不同回调地址，非必传
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
+notifyHook | http://www.baidu.com | - | 是 | 支持每个任务配置不同回调地址，非必传  
+
 #### 成功响应示例
 ```javascript
 {
@@ -98,18 +87,8 @@ taskId | 123456789 | - | 是 | 任务ID: UPSCALE、VARIATION时必传
 index | 1 | - | 是 | 图序号: 1～4，UPSCALE、VARIATION时必传，表示第几张图
 state | main | - | 是 | 自定义字符串: 非必传，供回调到业务系统里使用
 notifyHook | http://www.baidu.com | - | 是 | 支持每个任务配置不同回调地址，非必传
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
+
+
 #### 成功响应示例
 ```javascript
 {
@@ -149,18 +128,7 @@ _id | 8a2c5959-143b-46c5-adb6-242652ac8141 | String | 是 | 任务id
 参数名 | 示例值 | 参数类型 | 是否必填 | 参数描述
 --- | --- | --- | --- | ---
 _id | 8a2c5959-143b-46c5-adb6-242652ac8141 | - | 是 | 任务id
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
+
 #### 成功响应示例
 ```javascript
 {
@@ -213,18 +181,7 @@ _id | 8a2c5959-143b-46c5-adb6-242652ac8141 | String | 是 | 任务id
 参数名 | 示例值 | 参数类型 | 是否必填 | 参数描述
 --- | --- | --- | --- | ---
 _id | 8a2c5959-143b-46c5-adb6-242652ac8141 | - | 是 | 任务id
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
+
 #### 成功响应示例
 ```javascript
 {
@@ -269,18 +226,7 @@ noauth
 #### Content-Type
 > form-data
 
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
+
 #### 成功响应示例
 ```javascript
 [
@@ -321,24 +267,6 @@ noauth
 #### 接口URL
 > http://127.0.0.1:3000/api/v1//task/list
 
-#### 请求方式
-> GET
-
-#### Content-Type
-> form-data
-
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
 #### 成功响应示例
 ```javascript
 [{

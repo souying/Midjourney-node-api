@@ -2,6 +2,8 @@
 
 代理 MidJourney 的discord频道，实现api形式调用AI绘图  
 
+前端大佬感兴趣的快速提pr, 本人不是专业后端,代码不保证无bug    
+
 ## 现有功能
 - [x] 支持 Imagine、U、V 指令，绘图完成后回调  
 - [x] 支持队列执行  

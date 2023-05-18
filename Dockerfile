@@ -1,4 +1,4 @@
-FROM node:20.2-alpine3.17 AS builder
+FROM node:18.16-alpine3.17 AS builder
 
 WORKDIR /Midjourney
 
@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install --production
 
-FROM node:20.2-alpine3.17
+FROM node:18.16-alpine3.17
 
 ENV APP_DIR=/Midjourney
 
@@ -20,5 +20,5 @@ RUN npm install -g pm2
 
 EXPOSE 3000
 
-#CMD pm2-runtime start app.js --name "Midjourney"
+#CMD pm2-runtime start ${APP_DIR}/bin/www --name "Midjourney"
 ENTRYPOINT ["sh", "docker-entrypoint.sh"]

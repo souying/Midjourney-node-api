@@ -9,24 +9,53 @@
 - [x] 支持队列执行  
 - [x] 支持中文 prompt 翻译，需配置百度翻译
 - [x] 队列任务存储在本地小型数据库  
+- [x] docker&docker-compose安装 
 
 ## 后续计划
 - [ ] 定时清空所有任务  
 - [ ] 账号池子（暂定）
 - [ ] 看情况优化 
-- [ ] docker安装方式 
+- [ ] 对接阿里OSS  
 
 ## 使用前提
 1. 科学上网
 2. node环境 node 18版本以上
 3. 注册 MidJourney，创建自己的频道，参考 https://docs.midjourney.com/docs/quick-start
 
+## docker部署：
+
+1.运行docker容器
+
+- Docker一键命令：
+
+```
+docker run -dit \
+  -v $PWD/Midjourney/basedata:/Midjourney/basedata \
+  -p 5400:3000 \
+  --restart=always \
+  --name midjourney \
+grbhq/midjourney:latest
+```
+
+- docker-compose一键部署[需安装docker-compose工具]：
+
+```
+wget -O docker-compose.yaml https://raw.githubusercontent.com/souying/Midjourney-node-api/main/docker-compose.yaml && docker-compose up -d
+```  
+
+2.进入当前`Midjourney/basedata`目录下修改`.env`文件 参考.env.example  
+
+3.重启docker容器(生效.env变量)  
+`docker restart midjourney`
+
+4.启动后访问服务器`ip:5400`
+
 ## 快速启动
 1.确保服务器已经有node环境18以上    
 2.拉取代码   
 ```
-git clone https://github.com/erictik/midjourney-api.git
-cd midjourney-api
+git clone https://github.com/souying/Midjourney-node-api.git
+cd Midjourney-node-api
 ```
 3.下载依赖  
 ```

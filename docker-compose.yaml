@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  Midjourney:
+    image: grbhq/midjourney:latest
+    container_name: midjourney
+    volumes:
+      - ./Midjourney/basedata:/Midjourney/basedata
+    ports:
+      - "5400:3000"
+    restart: always

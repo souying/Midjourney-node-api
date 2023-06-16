@@ -88,7 +88,7 @@ class Midjourney extends midjourney_message_1.MidjourneyMessage {
                 channel_id: this.ChannelId,
                 session_id: "2fb980f65e5c9a77c96ca01f2c242cf6",
                 data: {
-                    version: "1077969938624553050",
+                    version: "1118961510123847772",
                     id: "938956540159881230",
                     name: "imagine",
                     type: 1,
@@ -102,7 +102,7 @@ class Midjourney extends midjourney_message_1.MidjourneyMessage {
                     application_command: {
                         id: "938956540159881230",
                         application_id: "936929561302675456",
-                        version: "1077969938624553050",
+                        version: "1118961510123847772",
                         default_permission: true,
                         default_member_permissions: null,
                         type: 1,
